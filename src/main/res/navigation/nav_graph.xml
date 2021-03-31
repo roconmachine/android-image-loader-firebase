@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListImage">
+
+    <fragment
+        android:id="@+id/ListImage"
+        android:name="com.example.firebase_image_loader."
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/image_list">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@+id/Full_Image" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Full_Image"
+        android:name="com.example.firebase_image_loader."
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/full_image">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@+id/ListImage" />
+    </fragment>
+
+</navigation>
