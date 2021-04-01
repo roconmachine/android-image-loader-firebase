@@ -7,23 +7,23 @@
 
     <fragment
         android:id="@+id/ListImage"
-        android:name="com.example.firebase_image_loader."
+        android:name="com.example.firebase_image_loader.ui.ListViewFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/image_list">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            android:id="@+id/action_ListImage_to_Full_Image"
             app:destination="@+id/Full_Image" />
     </fragment>
 
     <fragment
         android:id="@+id/Full_Image"
-        android:name="com.example.firebase_image_loader."
+        android:name="com.example.firebase_image_loader.ui.DetailFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/full_image">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            android:id="@+id/action_Full_Image_to_ListImage"
             app:destination="@+id/ListImage" />
     </fragment>
 
