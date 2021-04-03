@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/ListImage"
-        android:name="com.example.firebase_image_loader.ui.ListViewFragment"
+        android:name="com.example.firebase_image_loader.ui.image.ListViewFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/image_list">
 
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/Full_Image"
-        android:name="com.example.firebase_image_loader.ui.DetailFragment"
+        android:name="com.example.firebase_image_loader.ui.image.DetailFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/full_image">
 

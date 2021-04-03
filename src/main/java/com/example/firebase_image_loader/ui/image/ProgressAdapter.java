@@ -1,4 +1,4 @@
-package com.example.firebase_image_loader.ui.adapter;
+package com.example.firebase_image_loader.ui.image;
 
 import android.content.Context;
 import android.graphics.Bitmap;
